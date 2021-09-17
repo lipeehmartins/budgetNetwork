@@ -1,0 +1,136 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/*<-- header -->*/
+
+_ .nav h1 {
+    font-weight: 100;
+    font-size: 1.5rem;
+}
+
+#nav-title {
+    font-weight: bold !important;
+    font-size: 2.125rem !important;
+}
+
+.nav {
+    width: 98%;
+    margin: -1rem 0rem 0rem 1rem;
+    display: inline-flex;
+    justify-content: space-between;
+    padding: 1rem 1rem 0rem 1rem;
+    align-items: center;
+}
+
+.nav-li {
+    display: flex;
+    margin: 1rem 0rem 0rem 0rem;
+    justify-content: space-between;
+}
+
+.nav-li li {
+    margin-right: 26%;
+    margin-left: -34%;
+    margin-top: -14%;
+}
+
+a {
+    text-decoration: none;
+    color: #050505;
+}
+
+/*<-- main content -->*/
+
+.main {
+    background: url(../images/steve-johnson-0sPFjdcRhko-unsplash.png) no-repeat center center;
+    background-size: cover;
+    width: 100%;
+    height: 43.6rem;
+    color: #FAF4F4;
+}
+
+.main-content {
+    width: 69%;
+}
+
+.main-content h2 {
+    font-size: 4.25rem;
+    padding: 3rem 0rem 0rem 0rem;
+}
+
+.main-content h3 {
+    font-size: 1.84rem;
+    padding: 2.5rem 0rem 0rem 0rem;
+}
+
+/* <--signup--> */
+
+.signup {
+    width: 26%;
+    margin-top: 2rem;
+}
+
+label {
+    margin: 0.7rem;
+}
+
+.email-input {
+    display: block;
+    background-color: #f8f5f554;
+    width: 100%;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #F8F5F5;
+    border-radius: 0.9375rem;
+    border-block: none;
+    border: none;
+    appearance: none;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+.password-input {
+    color: #F8F5F5;
+    background-color: #f8f5f554;
+    border-radius: 0.9375rem;
+    border-block: none;
+    padding: 1rem 0rem;
+}
+
+.email-input:focus {
+    background-color: #f8f5f554;
+    outline: none;
+    border: none;
+    box-shadow: none;
+}
+
+.input {
+    display: block;
+    width: 100%;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #F8F5F5;
+    border-radius: 0.9375rem;
+    border-block: none;
+    background-color: rgb(248 245 245 / 0%);
+    border: none;
+    appearance: none;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+input:focus {
+    background-color: #f8f5f500;
+    outline: none;
+}
+
+.btn-submit {
+    border-radius: 0.9375rem;
+    font-size: 1rem;
+    width: 9rem;
+    padding: 0.5rem;
+    margin-top: 1rem;
+}
