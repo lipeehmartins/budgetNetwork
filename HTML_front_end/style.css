@@ -1,7 +1,5 @@
 body {
     font-family: 'Montserrat', sans-serif;
-    background: linear-gradient(to right, #00000069, #00000069), url(../images/steve-johnson-0sPFjdcRhko-unsplash.png) no-repeat center center;
-    background-size: cover;
     min-height: 100vh;
 }
 
@@ -49,16 +47,18 @@ a {
     color: #64C2EE;
 }
 
-/*<-- main content -->*/
-
-.main {
-    width: 100%;
-    height: 44rem;
-    color: #FAF4F4;
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #003664;
 }
 
+/*<-- main content -->*/
+
 .main-content {
-    width: 69%;
+    width: 51%;
+    text-align: -webkit-center;
 }
 
 .main-content h2 {
@@ -73,62 +73,39 @@ a {
 
 /* <--signup--> */
 
-.signup {
-    width: 26%;
+.login {
+    background-color: #64C2EE;
+    width: 35%;
     margin-top: 2rem;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.signin {
+    width: 15rem;
 }
 
 label {
     margin: 0.7rem;
 }
 
-.email-input {
-    display: block;
-    background-color: #f8f5f554;
-    width: 100%;
-    padding: .75rem .75rem;
-    font-size: 1rem;
-    font-weight: 400;
-    line-height: 1.5;
-    color: #F8F5F5;
-    border-radius: 0.9375rem;
-    border-block: none;
-    border: none;
-    appearance: none;
-    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
-}
-
-.password-input {
-    color: #F8F5F5;
-    background-color: #f8f5f554;
-    border-radius: 0.9375rem;
-    border-block: none;
-    padding: 1rem 0rem;
-}
-
-.email-input:focus {
-    background-color: #f8f5f554;
-    outline: none;
-    border: none;
-    box-shadow: none;
-}
-
 .input {
     display: block;
     width: 100%;
-    padding: .375rem .75rem;
-    color: #F8F5F5;
-    background-color: rgb(248 245 245 / 0%);
+    padding: .5rem .75rem;
+    border-radius: 0.9375rem;
+    border-block: none;
     border: none;
 }
 
 input:focus {
-    background-color: #f8f5f500;
     outline: none;
 }
 
 input::-webkit-input-placeholder {
-    color: #F8F5F5;
+    color: #003664;
 }
 
 .btn-submit {
@@ -137,6 +114,8 @@ input::-webkit-input-placeholder {
     width: 9rem;
     padding: 0.5rem;
     margin-top: 1rem;
+    background-color: #003664;
+    color: #ffffff;
 }
 
 /* <---------- mediaquery ----------->*/
@@ -145,9 +124,7 @@ input::-webkit-input-placeholder {
     /*<-- header -->*/
     .header {
         background-color: #003664;
-        width: max-content;
     }
-
     .nav h1 {
         font-weight: 100;
         font-size: 1rem;
@@ -160,86 +137,124 @@ input::-webkit-input-placeholder {
         width: 100%;
         margin: 0rem 0rem 0rem 0rem;
         display: inline-flex;
-        justify-content: space-between;
         padding: 1rem 1rem 0rem 1rem;
         align-items: center;
+        color: #64C2EE;
+        justify-content: space-between;
     }
     .nav-li {
-        display: flex;
         margin: 0.5rem 0rem 0rem 0rem;
-        justify-content: space-between;
     }
     .nav-li li {
         margin-right: 26%;
         margin-left: -34%;
         margin-top: -14%;
     }
-    a {
-        text-decoration: none;
-    }
     /*<-- main content -->*/
-    .main {
-        background: linear-gradient(to right, #00000069, #00000069), url(../images/steve-johnson-0sPFjdcRhko-unsplash.png) no-repeat;
-        background-size: cover;
-        background-position: -156px;
-        width: 100%;
-        height: 37.6rem;
-    }
     .main-content {
         width: 100%;
     }
     .main-content h2 {
         font-size: 1.9rem;
         padding: 3rem 0rem 0rem 0rem;
-        width: 100%;
     }
     .main-content h3 {
         font-size: 1rem;
         padding: 1.5rem 0rem 0rem 0rem;
     }
-    /* <--signup--> */
-    .signup {
-        width: 73%;
-        margin-top: 1rem;
+    /* <--login--> */
+    .login {
+        width: 90%;
     }
-   
+    .signin {
+        width: 14.5rem;
+    }
+    #signup {
+        display: none;
+    }
     label {
         margin: 0.7rem;
-    }
-    .email-input {
-        display: block;
-        width: 100%;
-        padding: .75rem .75rem;
-        border-radius: 0.9375rem;
-        border: none;
-    }
-    .password-input {
-        border-radius: 0.9375rem;
-        border-block: none;
-        padding: 1rem 0rem;
-    }
-    .email-input:focus {
-        outline: none;
-        border: none;
-        box-shadow: none;
     }
     .input {
         display: block;
         width: 100%;
-        padding: .375rem .75rem;
-        color: #F8F5F5;
-        background-color: rgb(248 245 245 / 0%);
+        padding: .5rem .75rem;
+        border-radius: 0.9375rem;
+        border-block: none;
         border: none;
     }
     input:focus {
-        background-color: #f8f5f500;
         outline: none;
     }
-    .btn-submit {
-        border-radius: 0.9375rem;
-        font-size: 1rem;
-        width: 9rem;
-        padding: 0.5rem;
-        margin-top: 1rem;
+    input::-webkit-input-placeholder {
+        color: #003664;
     }
+    .btn-submit {
+        margin-top: 1.5rem;
+    }
+}
+
+/* <---------- home -------->*/
+
+.name {
+    margin-top: 2rem;
+    align-self: baseline;
+}
+
+.p {
+    align-self: baseline;
+    display: inline-flex;
+    padding: 1rem;
+    width: auto;
+    justify-content: space-around;
+}
+
+
+.table {
+    margin-bottom: 1rem;
+    color: #212529;
+    background-color: rgb(187 220 235 / 47%);
+    width: -webkit-fill-available;
+    padding: 1rem;
+    text-align: center;
+}
+
+.table-container {
+    width: inherit;
+}
+
+table {
+    border: 0.0001rem #003664 solid;
+    border-radius: 1.25rem;
+    background-color: white;
+    border-collapse: inherit;
+    padding: 1rem;
+    width: inherit
+}
+
+tbody {
+    padding: .5rem .5rem;
+    width: inherit;
+    display: inline-table;
+    border-bottom: none;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #003664;
+    width: 60%;
+    padding-right: var(--bs-gutter-x,.75rem);
+    padding-left: var(--bs-gutter-x,.75rem);
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.th {
+    border-bottom: 0.0001rem #003664 solid;
+}
+
+.pages a {
+    color: #003664;
 }
