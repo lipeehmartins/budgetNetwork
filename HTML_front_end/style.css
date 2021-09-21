@@ -205,7 +205,7 @@ input::-webkit-input-placeholder {
     align-self: baseline;
     display: inline-flex;
     padding: 1rem;
-    width: auto;
+    width: 30%;
     justify-content: space-around;
 }
 
@@ -227,7 +227,7 @@ table {
     border: 0.0001rem #003664 solid;
     border-radius: 1.25rem;
     background-color: white;
-    border-collapse: inherit;
+    border-collapse: collapse;
     padding: 1rem;
     width: inherit
 }
@@ -251,10 +251,25 @@ tbody {
     margin-left: auto;
 }
 
-.th {
+.pages a {
+    color: #003664;
+}
+
+table th {
     border-bottom: 0.0001rem #003664 solid;
 }
 
-.pages a {
-    color: #003664;
+table, th, td {
+    border-right: 0.0001rem #003664 solid;
+}
+
+/* <---------------- graphic --------------------> */
+
+.graphic {
+    margin-bottom: 1rem;
+    color: #212529;
+    background-color: rgb(187 220 235 / 47%);
+    width: -webkit-fill-available;
+    padding: 1rem;
+    text-align: center;
 }
