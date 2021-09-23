@@ -212,24 +212,31 @@ input::-webkit-input-placeholder {
 
 .table {
     margin-bottom: 1rem;
-    color: #212529;
     background-color: rgb(187 220 235 / 47%);
-    width: -webkit-fill-available;
     padding: 1rem;
-    text-align: center;
-}
-
-.table-container {
+    text-align: -webkit-center;
     width: inherit;
 }
 
-table {
+.table-container {
     border: 0.0001rem #003664 solid;
     border-radius: 1.25rem;
     background-color: white;
     border-collapse: collapse;
+}
+
+.table-header {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.header-p {
+    line-height: 0rem;
+    font-size: 2.3125rem;
     padding: 1rem;
-    width: inherit
+    border-right: 0.0001rem #003664 solid;
+    text-decoration: 0.0001rem underline;
+    text-underline-position: under;
 }
 
 tbody {
@@ -249,6 +256,22 @@ tbody {
     padding-left: var(--bs-gutter-x,.75rem);
     margin-right: auto;
     margin-left: auto;
+}
+
+.content {
+    display: flex;
+    justify-content: space-evenly;
+    line-height: 4rem;
+}
+
+.date {
+    border-right: 0.0001rem #003664 solid;
+    padding-right: 1.3rem;
+}
+
+.item {
+    border-right: 0.0001rem #003664 solid;
+    padding-right: 2.4rem;
 }
 
 .pages a {
